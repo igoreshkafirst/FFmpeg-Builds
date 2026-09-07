@@ -29,6 +29,7 @@ ffbuild_dockerbuild() {
         --default-library=static
         --wrap-mode=nodownload
         -Dtriplet="$FFBUILD_RUST_TARGET"
+        -Db_lto=false
         -Davif=enabled
         -Dpixbuf=disabled
         -Dpixbuf-loader=disabled
